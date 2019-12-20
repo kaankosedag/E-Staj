@@ -1,0 +1,32 @@
+.star-rating {
+    float: left;
+}
+.star-rating > input {
+    display: none;
+}
+.star-rating > label {
+    color: black;
+    color: #222222; /* Start color when not clicked */
+    float: right;
+    transform: scale(1.2);
+    padding: 0 3px;
+}
+.star-rating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.star-rating > input:hover, input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+
+.content .duyuru .alert {
+	color: #000;
+}
+.content .duyuru .alert a {
+	font-weight: 600;
+}
+.content .duyuru .alert a:hover {
+	transition: 0.2s;
+}
+
+.content .sorular .soru {
+    border-bottom: 1px solid black;
+}

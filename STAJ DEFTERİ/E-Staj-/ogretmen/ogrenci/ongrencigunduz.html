@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Staj | Öğrenci-Gündüz</title>
+
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../../img/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            E-Staj | Öğretmen
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="yazi" >
+                    <a href="../../login.html"><font color="black" &nbps> <i class="fas fa-sign-out-alt"></i> Çıkış Yap</font></a></div>
+            </form>
+        </div>
+    </nav>
+    
+    <nav class="side-menu">
+        <div class="side-menu-head">
+            <div class="profile-img rounded-circle">
+                <img class="rounded-circle" src="../../img/sup-img.png">
+            </div>
+            <div class="profile-info">
+                <div class="name">İlknur Kaynarca</div>
+                <div class="title">Öğretmen</div>
+                <div class="no">Numara</div>
+            </div>
+        </div>
+        <div class="side-menu-content">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="../index.html"><i class="fas fa-home"></i>&nbsp;Anasayfa</a>
+                <button class="nav-link dropdown-btn">
+                    <i class="fas fa-clipboard-list"></i>
+                    &nbsp;Form
+                    <i class="fa fa-caret-down" name="last"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a class="nav-link" href="../form/bekleyenformlar.html">Bekleyen Formlar</a>
+                    <a class="nav-link" href="../form/onaylanmisformlar.html">Onaylanmış Formlar</a>
+                    <a class="nav-link" href="../form/reddedilenformlar.html">Reddedilen Formlar</a>
+                    <a class="nav-link" href="../form/butunformlar.html">Bütün Formlar</a>
+                </div>
+                <button class="nav-link dropdown-btn">
+                    <i class="fas fa-user-graduate"></i>
+                    &nbsp;Öğrenci
+                    <i class="fa fa-caret-down" name="last"></i>
+                </button>
+                <div class="dropdown-container">
+                    <button class="nav-link dropdown-btn">
+                        Öğrenci Listesi
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a class="nav-link" href="ongrencigunduz.html">Gündüz</a>
+                        <a class="nav-link" href="ongrencigece.html">Gece</a>
+                    </div>
+                </div>
+                <button class="nav-link dropdown-btn">
+                    <i class="fas fa-building"></i>
+                    &nbsp; İşyeri
+                    <i class="fa fa-caret-down" name="last"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a class="nav-link" href="../isyeri/isyerilistes.html">İşyeri Listesi</a>
+                    <a class="nav-link" href="../isyeri/isyeripuanla.html">İşyeri Puanla</a>
+                </div>
+                <a class="nav-link" href="../sss.html">
+                    <i class="fas fa-question"></i>
+                    &nbsp;Sıkça Sorulan Sorular
+                </a>
+            </nav>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="d-flex justify-content-center pt-3 pb-3">
+            <div class="content-area pl-2 pr-2 pt-4 pb-2">
+                <h2 class="pb-2">Öğrenci Listesi(Gündüz)</h2>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <div class="form-row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" placeholder="Öğrenci No">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control">
+                                            <option>Bölüm</option>
+                                            <option>Bilgisayar Programcılığı</option>
+                                            <option>Bilgisayar Teknolojileri</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-info form-control">Ara</button>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Resim</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Ad Soyad</th>
+                            <th scope="col">Bölüm</th>
+                            <th scope="col">Staj Defteri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <img src="../../img/sup-img.png" height="30" class="rounded-circle">
+                            </td>
+                            <td>180111345</td>
+                            <td>Lale Gül</td>
+                            <td>Bilgisayar Programcılığı</td>
+                            <td><button class="btn btn-outline-info">Staj Defteri Oku</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <img src="../../img/sup-img.png" height="30" class="rounded-circle">
+                            </td>
+                            <td>180111043</td>
+                            <td>Zehra Yalı</td>
+                            <td>Bilgisayar Programcılığı</td>
+                            <td><button class="btn btn-outline-info">Staj Defteri Oku</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <img src="../../img/sup-img.png" height="30" class="rounded-circle">
+                            </td>
+                            <td>180111082</td>
+                            <td>Gülay Yavru</td>
+                            <td>Bilgisayar Programcılığı</td>
+                            <td><button class="btn btn-outline-info">Staj Defteri Oku</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</body>
+</html>

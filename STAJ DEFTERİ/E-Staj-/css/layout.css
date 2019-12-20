@@ -1,0 +1,100 @@
+body {
+    background-color: #ececec;
+}
+.forum{
+    width: 70%;
+    height: 60%;
+    background-color: black;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+.navbar .navbar-brand {
+    line-height: 50px;
+}
+.navbar .navbar-collapse a{
+    font-size: 13pt;
+}
+.navbar .navbar-collapse a:hover {
+    text-decoration: none;
+
+}
+.navbar .navbar-collapse a:hover > font {
+        color: #007bff;
+        transition: 0.2s;
+}
+.side-menu {
+    position: fixed;
+    background: #0089ac;
+    width: 200px;
+    overflow-x: scroll;
+}
+.side-menu .side-menu-head {
+    border-bottom: 1px solid #dfdfdf;
+}
+.side-menu .side-menu-head,
+.side-menu .side-menu-content {
+    padding: 10px 0;
+}
+.side-menu .side-menu-head .profile-img,
+.side-menu .side-menu-head .profile-img img {
+    height: 60px;
+}
+.side-menu .side-menu-head .profile-img,
+.side-menu .side-menu-head .profile-info {
+   text-align: center;
+}
+.side-menu .side-menu-head .profile-info .name,
+.side-menu .side-menu-head .profile-info .title,
+.side-menu .side-menu-head .profile-info .no {
+    width: 100%;
+}
+.side-menu .side-menu-head .profile-info .name {
+    color: white;
+    font-size: 13pt;
+}
+.side-menu .side-menu-head .profile-info .title,
+.side-menu .side-menu-head .profile-info .no {
+    color: #c0c0c0;
+    font-size: 11pt;
+}
+.side-menu .side-menu-content {
+    font-size: 10pt;
+    text-align: left;
+}
+.side-menu .side-menu-content a,
+.side-menu .side-menu-content .dropdown-btn{
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #fff;
+    outline: none;
+}
+.side-menu .side-menu-content a:hover,
+.side-menu .side-menu-content .dropdown-btn:hover {
+    transition: 0.2s;
+    color: #000;
+}
+.side-menu .side-menu-content .dropdown-btn svg[name ~="last"],
+.side-menu .side-menu-content .dropdown-container .dropdown-btn svg {
+    float: right;
+}
+.side-menu .dropdown-container {
+    display: none;
+    background-color: #026077;
+}
+.side-menu .side-menu-content .dropdown-container .dropdown-container {
+    background-color: #004455;
+}
+.content {
+    position: relative;
+    left: 200px;
+  
+}
+.content .content-area {
+    width: 90%;
+    background-color: white;
+}
+
